@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Análise de Avarias</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <header>
+          <h1>Análise de Avarias</h1>
+          <p class="description">
+            Selecione o <strong>Estoque Atual</strong> (.xls), um documento de
+            <strong>Avaria</strong> (.txt) e
+            <strong>Gere um Relatório</strong>
+            do que precisa ser editado em sua avaria.
+          </p>
+        </header>
+      </div>
+
+      <div id="buttons">
+        <div>
+          <label class="btn" for="storage-input">Estoque Atual</label>
+          <input id="storage-input" hidden type="file" />
+        </div>
+        <div>
+          <label class="btn" for="damaged-input">Avaria</label>
+          <input id="damaged-input" hidden type="file" />
+        </div>
+        <div id="btn-analysis" class="btn">Gerar Relatório</div>
+      </div>
+
+      <div>
+        <h2>Situação das Avarias</h2>
+        <div id="status">
+          <div class="status-column">
+            <div class="box edit"></div>
+            <p class="status-info">Edite esse item</p>
+          </div>
+
+          <div class="status-column">
+            <div class="box remove"></div>
+            <p class="status-info">Remova esse item</p>
+          </div>
+        </div>
+      </div>
+
+      <div hidden id="damaged-goods">
+        <table>
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Descrição</th>
+              <th>Estoque Atual</th>
+              <th>QTD Avariada</th>
+              <th>QTD p/ Remover</th>
+            </tr>
+          </thead>
+          <tbody id="table-damaged"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./build/out.js"></script>
+  </body>
+</html>
