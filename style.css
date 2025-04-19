@@ -17,10 +17,9 @@ h2 {
 }
 
 .description {
-  margin: 36px auto;
+  margin: 24px auto;
   width: 800px;
   text-align: center;
-  font-size: 20px;
 }
 
 body {
@@ -101,15 +100,15 @@ h1 {
   justify-content: center;
   column-gap: 72px;
   background-color: lightgray;
-  width: 800px;
-  height: 96px;
+  width: 520px;
+  height: 72px;
   border-radius: 10px;
   border: 2px solid black;
   margin: 36px auto;
 }
 
 .box {
-  width: 64px;
+  width: 36px;
   height: 36px;
   border: 2px solid black;
 }
