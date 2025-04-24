@@ -7,8 +7,9 @@ function main() {
   const damagedInput = document.getElementById("damaged-input");
   const btnAnalysis = document.getElementById("btn-analysis");
   const table = document.getElementById("table-damaged");
+  const status = document.getElementById("status");
 
-  const damaged = new Damaged(table);
+  const damaged = new Damaged(table, status);
 
   storageInput.addEventListener("input", (e) => {
     const file = e.target.files[0];
@@ -30,5 +31,6 @@ function main() {
     damaged.fillTable();
 
     document.getElementById("damaged-goods").hidden = false;
+    document.getElementById("status-container").hidden = false;
   });
 }

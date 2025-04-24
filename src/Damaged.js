@@ -4,11 +4,13 @@ export class Damaged {
   #reportList;
 
   #table;
+  #status;
 
-  constructor(table) {
+  constructor(table, status) {
     this.#storageMap = new Map();
     this.#damagedMap = new Map();
     this.#table = table;
+    this.#status = status;
   }
 
   storageReader(file) {
@@ -153,8 +155,13 @@ export class Damaged {
 
   fillTable() {
     this.clearTable();
+    const containerAll = this.#status.querySelector("#status-all span");
+    const containerToSolve = this.#status.querySelector(
+      "#status-to-solve span"
+    );
 
-    const toResolve = this.#generateReport();
+    containerAll.textContent = this.#damagedMap.size;
+    containerToSolve.textContent = this.#generateReport();
 
     this.#reportList.forEach((item) => {
       this.#addRow(this.#table, item);

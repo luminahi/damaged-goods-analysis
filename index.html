@@ -14,7 +14,7 @@
             Selecione o <strong>Estoque Atual</strong> (.xls), um documento de
             <strong>Avaria</strong> (.txt) e
             <strong>Gere um Relatório</strong>
-            do que precisa ser editado em sua avaria.
+            do que precisa ser alterado em sua avaria.
           </p>
         </header>
       </div>
@@ -32,16 +32,28 @@
       </div>
 
       <div>
-        <h2>Situação das Avarias</h2>
-        <div id="status">
-          <div class="status-column">
+        <!-- <h2>Situação das Avarias</h2> -->
+        <div id="legend">
+          <div class="legend-column">
             <div class="box edit"></div>
-            <p class="status-info">Edite</p>
+            <p class="legend-info">Edite</p>
           </div>
 
-          <div class="status-column">
+          <div class="legend-column">
             <div class="box remove"></div>
-            <p class="status-info">Remova</p>
+            <p class="legend-info">Remova</p>
+          </div>
+        </div>
+      </div>
+
+      <div hidden id="status-container">
+        <div id="status">
+          <div class="status-description" id="status-all">
+            <p>Total de Avarias: <span>0</span></p>
+          </div>
+
+          <div class="status-description" id="status-to-solve">
+            <p>Avarias a Resolver: <span>0</span></p>
           </div>
         </div>
       </div>
