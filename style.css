@@ -55,7 +55,7 @@ h1 {
 }
 
 .container div {
-  margin-block: 24px;
+  margin-block: 16px;
 }
 
 /* Buttons */
@@ -107,7 +107,7 @@ h1 {
   width: 520px;
   height: 72px;
   border-radius: 10px;
-  margin: 36px auto;
+  margin-inline: auto;
 }
 
 #status {
@@ -116,7 +116,6 @@ h1 {
   flex-flow: row wrap;
   justify-content: center;
   column-gap: 64px;
-  margin: 0px auto;
 }
 
 .status-description {
