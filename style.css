@@ -30,9 +30,10 @@ body {
 
 table {
   border-collapse: collapse;
-  margin: 0 auto;
+  margin-inline: auto;
   background-color: lightgray;
   box-shadow: 10px 10px black;
+  margin-bottom: 64px;
 }
 
 th,
